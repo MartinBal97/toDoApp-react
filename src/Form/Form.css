@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+.containerForm {
+    border: 1px solid lightgray;
+    width: fit-content;
+    margin: 1rem auto 0 auto;
+    background-color: rgb(246, 246, 246);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.priorityContainer {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 7px;
+}
+select {
+    padding: 7px;
+}
