@@ -1,0 +1,25 @@
+.containerCategory{
+    border: 1px solid lightgray;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titleCateg {
+    margin-bottom: 1rem;
+}
+.categ {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 30px;
+    border: none;
+}
+.categ:hover {
+    background-color: rgb(203, 203, 203);
+}
