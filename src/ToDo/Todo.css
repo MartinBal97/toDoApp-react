@@ -21,6 +21,48 @@
     padding-right: 1rem;
     border-right: 1px solid rgb(192, 192, 192);
 }
+.taskPriority {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Medium , .High , .Low{
+    font-size: 11px;
+    font-weight: bold;
+}
+.High {
+    color: red;
+}
+.Medium {
+    color: rgb(215, 183, 0);
+}
+.Low {
+    color: green;
+}
+
 .buttons {
     display: flex;
+    border-left: 1px solid rgb(192, 192, 192);
+}
+.btn {
+    padding: 0.5rem;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.delete {
+    background-color: rgb(234, 111, 111);
+}
+.done {
+    background-color: rgb(94, 163, 87);
+
+}
+/*****js*****/
+.tachado {
+    text-decoration:line-through;
+    opacity: 0.5;
 }
