@@ -3,7 +3,6 @@ import './Todo.css'
 export default function ToDo({ task, data, setData}) {
     
     const btnDelete = (ev) => {
-    // ev.target.parentElement.parentElement.remove()
        setData(data.filter(e => e.task.task !== ev.target.parentElement.previousElementSibling.lastChild.firstChild.innerText))
     }
 

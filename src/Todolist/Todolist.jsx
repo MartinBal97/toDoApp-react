@@ -1,8 +1,7 @@
 import ToDo from '../ToDo/Todo'
 
-export default function Todolist({data, setData,tasksSameCategory}) {
 
-  
+export default function Todolist({data, setData,tasksSameCategory}) {
 
   return (
       <div className='containerTodolist'>
