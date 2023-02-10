@@ -1,6 +1,11 @@
 .containerCategory{
-    border: 1px solid lightgray;
-    background-color: rgb(246, 246, 246);
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     padding: 1rem 2rem;
     margin: 1rem;
@@ -17,6 +22,7 @@
     text-align: center;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
+    font-weight: bold;
     border-radius: 30px;
     border: none;
 }

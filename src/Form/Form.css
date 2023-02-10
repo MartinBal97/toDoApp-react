@@ -5,13 +5,17 @@ h1 {
     border: 1px solid lightgray;
     width: 100%;
     margin: 1rem;
-    background-color: rgb(246, 246, 246);
-    padding: 2rem;
+/* From https://css.glass */
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.75);    padding: 2rem;
     border-radius: 10px;
 }
 
 form {
-    width: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -24,15 +28,21 @@ form {
     display: flex;
     flex-direction: column;
 }
-input {
+task{
+    font-size: 1.4rem;
+}
+input, select {
     padding: 7px;
     margin: 0.5rem;
-    width: fit-content;
-
+    border-radius: 5px;
+    border: none;
 }
-select {
-    margin: 0.5rem;
-
-    padding: 7px;
-    width: fit-content;
+.submit {
+    margin: 07px auto 0 auto;
+    font-size: 1rem;
+    background-color: rgb(41, 97, 55);
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
 }
+

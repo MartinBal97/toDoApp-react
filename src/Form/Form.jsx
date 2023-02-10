@@ -1,7 +1,7 @@
 import './Form.css'
 import { useState } from 'react';
 
-export default function Form({setData,isDone,isDeleted}) {
+export default function Form({setData,data}) {
 
     const [task, setTask] = useState('');
     const [category, setCategory] = useState('Others');
@@ -14,6 +14,12 @@ export default function Form({setData,isDone,isDeleted}) {
         if (task === '') {
             alert('Debes colocar una tarea')
         } else {
+            // console.log(data)
+            // if(data){ 
+            //     console.log('hola')
+            //     console.log(data.find(e => e.task.task === task.task))
+            // }
+            
             let dateWrote = new Date()
     
             setData(prev =>
@@ -30,6 +36,7 @@ export default function Form({setData,isDone,isDeleted}) {
     return (
         <div className='containerForm'>
             <h1>To Do App</h1>
+            <p>Agrega tareas en el formulario de aquí abajo.</p>
             <form onSubmit={handleSubmit}>
                 <input onChange={(e) => setTask(e.target.value)} name='task' type="text" placeholder="Write a task" />
                 <input onChange={(e) => setCategory(e.target.value.toUpperCase())} type="text" placeholder="Write a category" />
@@ -48,7 +55,7 @@ export default function Form({setData,isDone,isDeleted}) {
                     <input onChange={(e) => setDateDone(e.target.value)} type="date" name="date" />
                 </div>
 
-                <input type="submit" value='Add new task' />
+                <input className='submit' type="submit" value='Add new task' />
             </form>
         </div>
     )

@@ -19,7 +19,7 @@ function App() {
       <div className="main">
         <Category setTasksSameCategory={setTasksSameCategory} data={data} />
         <Todolist tasksSameCategory={tasksSameCategory} data={data} setData={setData}/>
-        <Form setData={setData}  />
+        <Form data={data} setData={setData}  />
       </div>
     </div>
   );

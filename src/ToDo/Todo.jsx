@@ -3,7 +3,7 @@ import './Todo.css'
 export default function ToDo({ task, data, setData}) {
     
     const btnDelete = (ev) => {
-        // ev.target.parentElement.parentElement.remove()
+    // ev.target.parentElement.parentElement.remove()
        setData(data.filter(e => e.task.task !== ev.target.parentElement.previousElementSibling.lastChild.firstChild.innerText))
     }
 
@@ -17,8 +17,8 @@ export default function ToDo({ task, data, setData}) {
                 <div className='containerToDoes'>
                     <div>
                         <div className="dates">
-                            <p>DAY WROTE <br /> {task.dateWrote}</p>
-                            <p>DAY TO FINISH IT <br />{task.dateDone.dateDone}</p>
+                            <p>DAY WRITTEN <br /> {task.dateWrote}</p>
+                            <p>WHEN <br />{task.dateDone.dateDone}</p>
                         </div>
                         <div className='taskPriority'>
                             <p className="task">{task.task.task}</p>
